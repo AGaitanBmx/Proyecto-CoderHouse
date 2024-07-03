@@ -59,21 +59,34 @@
     text-align: center;
     font-size: 3vw;
     margin: 25px;
+    margin: 30px;
 }
 
 .img__categorias{
     width: 30vw;
     border-radius: 25px;
+    transition: filter 0.3s ease;
 }
+
+.img__categorias:hover{
+    filter: brightness(50%);
+}
+
+.texto__categorias{
+    font-size: 2vw;
+    text-decoration: none;
+    padding-top: 25px;
+}
+
 
 .grid__container{
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menu__grid1{
-    
+    padding-bottom: 40px;
 }
 /*Estilos aplicados directamente a las etiquetas*/
 header{
@@ -106,6 +119,7 @@ h1, h2, h3, h4, h5, p, a{
     font-family: "Oswald", sans-serif;
 }
 
+/*media query utilizda para hacer cambios cuando la pantalla se achique*/
 @media only screen and (max-width: 600px){
     .imagen__descriptiva{
         width: 150vw;
@@ -130,4 +144,28 @@ h1, h2, h3, h4, h5, p, a{
     .footer__txt{
         font-size: 2vw;
     }
+
+    .grid__container{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+}
+
+    .menu__grid1{
+        margin-bottom: 40px;
+    }
+
+    .img__categorias{
+        width: 80vw;
+        margin: 15px 40px;
+    }
+
+    .texto__categorias{
+        font-size: 5vw;
+        margin-bottom: 25px;
+    }
+
+    .titulo__categorias{
+        font-size: 6vw;
+    }
+
 }
