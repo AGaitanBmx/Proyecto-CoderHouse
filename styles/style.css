@@ -88,6 +88,36 @@
 .menu__grid1{
     padding-bottom: 40px;
 }
+
+.txt__nosotros{
+    text-align: center;
+    font-size: 2.8vw;
+    margin: 60px 40px;
+}
+
+.subtitulo__nosotros{
+    text-align: center;
+    font-size: 3vw;
+    margin: 40px;
+}
+
+.seccion__redes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.imagen__redes{
+    width: 12vw;
+    border-radius: 65px;
+    transition: transform 0.3s ease;
+}
+
+.imagen__redes:hover{
+    transform: scale(1.2)
+}
+
 /*Estilos aplicados directamente a las etiquetas*/
 header{
     width: 100%;
@@ -166,6 +196,10 @@ h1, h2, h3, h4, h5, p, a{
 
     .titulo__categorias{
         font-size: 6vw;
+    }
+
+    .imagen__redes{
+        width: 16vw;
     }
 
 }
