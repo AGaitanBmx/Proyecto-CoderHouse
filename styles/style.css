@@ -136,6 +136,27 @@
     margin-bottom: 60px;
 }
 
+.seccionn__mapa{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.mapa__ubicacion{
+    width: 60vw;
+    height: 55vh;
+    margin-bottom: 80px;
+}
+
+.seccion__carousel{
+    width: 60vw;
+}
+
+.img__carousel{
+    width: 80vw;
+    margin-bottom: 80px;
+}
+
 /*Estilos aplicados directamente a las etiquetas*/
 header{
     width: 100%;
@@ -224,4 +245,7 @@ h1, h2, h3, h4, h5, p, a{
         font-size: 4vw;
     }
 
+    .mapa__ubicacion{
+        height: 35vh;
+    }
 }
