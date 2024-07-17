@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    nav{
+        div{
+            .logo__img{
+                width: 7vw;
+                border-radius: 10%;
+                margin-left: 25px;
+            }
+            div{
+                ul{
+                    li{
+                        .a__nav{
+                            color: white;
+                            font-size: 22px !important;
+                            text-decoration: none;
+                            transition: transform 0.3s ease;
+                            margin-left: 15px;
+                            font-family: "Oswald", sans-serif;
+                            &:hover{
+                                transform: scale(1.2)
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

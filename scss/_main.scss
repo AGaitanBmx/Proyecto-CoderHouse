@@ -1,0 +1,157 @@
+/*Estilos del main de la seccion "Inicio"*/
+
+main{
+    background-color: black;
+    .titulo{
+        text-align: center;
+        margin: 25px 10px;
+    }
+    section{
+        .imagen__descriptiva{
+            border-radius: 25px;
+            width: 45vw;
+            margin: 10px auto;
+        }
+        .txt__inicio{
+            font-size: 2.2vw;
+        }
+    }
+    .seccion__principal2{
+        span{
+            .imagenes__principal2{
+                width: 30vw;
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+/*Estilos del main de la seccion "Categorias"*/
+
+.main__categorias{
+    .titulo__categorias{
+        text-align: center;
+        font-size: 3vw;
+        margin: 25px;
+        margin: 30px;
+    }
+    .grid__container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        .menu__grid1{
+            padding-bottom: 40px;
+            a{
+                .img__categorias{
+                    width: 30vw;
+                    border-radius: 25px;
+                    transition: filter 0.3s ease;
+                    &:hover{
+                        filter: brightness(50%);
+                    }
+                }
+            }
+            .texto__categorias{
+                font-size: 2vw;
+                text-decoration: none;
+                padding-top: 25px;
+            }            
+        }
+    }
+}
+
+/*Estilos del main de la seccion "Nosotros"*/
+
+.main__nosotros{
+    .titulo__nosotros{
+        text-align: center;
+        font-size: 3vw;
+        margin: 25px;
+        margin: 30px;
+    }
+    .txt__nosotros{
+        text-align: center;
+        font-size: 2.8vw;
+        margin: 60px 40px;
+    }
+    .subtitulo__nosotros{
+        text-align: center;
+        font-size: 3vw;
+        margin: 40px;
+    }
+    .seccion__redes{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        div{
+            a{
+                .imagen__redes{
+                    width: 12vw;
+                    border-radius: 65px;
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/*Estilos del main de la seccion "Contacto"*/
+
+.main__contacto{
+    .contacto{
+    div{
+        .titulo__contacto{
+            text-align: center;
+            margin: 60px;
+            font-size: 2.5vw;
+        }        
+    }
+    .contenedor__formulario{
+        justify-content: center;
+        margin-left:28vw;
+        .formulario__contacto{
+            width: 40vw;
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+    }
+    }
+}
+
+/*Estilos del main de la seccion "Ubicacion"*/
+
+.main__ubicacion{
+    section{
+        .titulo__ubicacion{
+            text-align: center;
+            font-size: 3vw;
+            padding-top: 50px;
+        }
+    }
+    .seccionn__mapa{
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+        .mapa__ubicacion{
+            width: 60vw;
+            height: 55vh;
+            margin-bottom: 80px;
+        }
+    }
+    .seccion__carousel{
+        width: 60vw;
+        div{
+            .img__carousel{
+                width: 80vw;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}

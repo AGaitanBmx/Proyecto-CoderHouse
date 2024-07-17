@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+body h1, body h2, body h3, body h4, body h5, body p, body a {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header nav div .logo__img {
+  width: 7vw;
+  border-radius: 10%;
+  margin-left: 25px;
+}
+header nav div div ul li .a__nav {
+  color: white;
+  font-size: 22px !important;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin-left: 15px;
+  font-family: "Oswald", sans-serif;
+}
+header nav div div ul li .a__nav:hover {
+  transform: scale(1.2);
+}
+
+/*Estilos del main de la seccion "Inicio"*/
+main {
+  background-color: black;
+}
+main .titulo {
+  text-align: center;
+  margin: 25px 10px;
+}
+main section .imagen__descriptiva {
+  border-radius: 25px;
+  width: 45vw;
+  margin: 10px auto;
+}
+main section .txt__inicio {
+  font-size: 2.2vw;
+}
+main .seccion__principal2 span .imagenes__principal2 {
+  width: 30vw;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+/*Estilos del main de la seccion "Categorias"*/
+.main__categorias .titulo__categorias {
+  text-align: center;
+  font-size: 3vw;
+  margin: 25px;
+  margin: 30px;
+}
+.main__categorias .grid__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main__categorias .grid__container .menu__grid1 {
+  padding-bottom: 40px;
+}
+.main__categorias .grid__container .menu__grid1 a .img__categorias {
+  width: 30vw;
+  border-radius: 25px;
+  transition: filter 0.3s ease;
+}
+.main__categorias .grid__container .menu__grid1 a .img__categorias:hover {
+  filter: brightness(50%);
+}
+.main__categorias .grid__container .menu__grid1 .texto__categorias {
+  font-size: 2vw;
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+/*Estilos del main de la seccion "Nosotros"*/
+.main__nosotros .titulo__nosotros {
+  text-align: center;
+  font-size: 3vw;
+  margin: 25px;
+  margin: 30px;
+}
+.main__nosotros .txt__nosotros {
+  text-align: center;
+  font-size: 2.8vw;
+  margin: 60px 40px;
+}
+.main__nosotros .subtitulo__nosotros {
+  text-align: center;
+  font-size: 3vw;
+  margin: 40px;
+}
+.main__nosotros .seccion__redes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.main__nosotros .seccion__redes div a .imagen__redes {
+  width: 12vw;
+  border-radius: 65px;
+  transition: transform 0.3s ease;
+}
+.main__nosotros .seccion__redes div a .imagen__redes:hover {
+  transform: scale(1.2);
+}
+
+/*Estilos del main de la seccion "Contacto"*/
+.main__contacto .contacto div .titulo__contacto {
+  text-align: center;
+  margin: 60px;
+  font-size: 2.5vw;
+}
+.main__contacto .contacto .contenedor__formulario {
+  justify-content: center;
+  margin-left: 28vw;
+}
+.main__contacto .contacto .contenedor__formulario .formulario__contacto {
+  width: 40vw;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+}
+
+/*Estilos del main de la seccion "Ubicacion"*/
+.main__ubicacion section .titulo__ubicacion {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 50px;
+}
+.main__ubicacion .seccionn__mapa {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.main__ubicacion .seccionn__mapa .mapa__ubicacion {
+  width: 60vw;
+  height: 55vh;
+  margin-bottom: 80px;
+}
+.main__ubicacion .seccion__carousel {
+  width: 60vw;
+}
+.main__ubicacion .seccion__carousel div .img__carousel {
+  width: 80vw;
+  margin-bottom: 80px;
+}
+
+footer {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #191919;
+  text-align: center;
+}
+footer div section .footer__txt {
+  font-size: 1.3vw;
+}
+footer div section .img__footer {
+  width: 2.5vw;
+  margin: 10px 50px;
+  border-radius: 18px;
+}
+
+/*media query utilizda para hacer cambios cuando la pantalla se achique*/
+@media only screen and (max-width: 600px) {
+  /*estilos aplicados a la seccion principal*/
+  main section .imagen__descriptiva {
+    width: 150vw;
+    margin-bottom: 25px;
+  }
+  main section .txt__inicio {
+    font-size: 3.5vw;
+  }
+  main .seccion__principal2 span .imagenes__principal2 {
+    width: 29vw;
+    margin: 30px 0px;
+  }
+  /*estilos aplicados a la seccion categorias*/
+  .main__categorias .titulo__categorias {
+    font-size: 6vw;
+  }
+  .main__categorias .grid__container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .main__categorias .grid__container .menu__grid1 {
+    margin-bottom: 40px;
+  }
+  .main__categorias .grid__container .menu__grid1 a .img__categorias {
+    width: 80vw;
+    margin: 15px 40px;
+  }
+  .main__categorias .grid__container .menu__grid1 .texto__categorias {
+    font-size: 5vw;
+    margin-bottom: 25px;
+  }
+  /*estilos aplicados a la seccion nosotros*/
+  .main__nosotros .titulo__nosotros {
+    font-size: 5vw;
+  }
+  .main__nosotros .txt__nosotros {
+    font-size: 5vw;
+  }
+  .main__nosotros .subtitulo__nosotros {
+    font-size: 4.5vw;
+  }
+  .main__nosotros .seccion__redes div a .imagen__redes {
+    width: 16vw;
+  }
+  /*estilos aplicados a la seccion contacto*/
+  .main__contacto {
+    margin-bottom: 75px;
+  }
+  .main__contacto .contacto div .titulo__contacto {
+    font-size: 4vw;
+  }
+  /*estilos aplicados a la seccion Ubicacion*/
+  .main__ubicacion section .titulo__ubicacion {
+    font-size: 4vw;
+  }
+  .main__ubicacion .seccionn__mapa .mapa__ubicacion {
+    height: 35vh;
+  }
+  /*estilos aplicados al footer*/
+  footer div section .footer__txt {
+    font-size: 2vw;
+  }
+  footer div section .img__footer {
+    width: 5vw;
+    margin: 5px 35px;
+  }
+}
+
+/*# sourceMappingURL=stilos.css.map */

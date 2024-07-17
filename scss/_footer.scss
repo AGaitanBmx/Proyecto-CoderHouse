@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:  #191919;
+    text-align: center;
+    div{
+        section{
+            .footer__txt{
+                font-size: 1.3vw;
+            }
+        }
+        section{
+            .img__footer{
+                width: 2.5vw;
+                margin: 10px 50px; 
+                border-radius: 18px;
+            }
+        }
+    }
+}

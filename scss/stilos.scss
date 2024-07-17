@@ -1,0 +1,113 @@
+@import "body";
+@import "header";
+@import "main";
+@import "footer";
+
+/*media query utilizda para hacer cambios cuando la pantalla se achique*/
+@media only screen and (max-width: 600px){
+    /*estilos aplicados a la seccion principal*/
+    main{
+        section{
+            .imagen__descriptiva{
+                width: 150vw;
+                margin-bottom: 25px;
+            }
+            .txt__inicio{
+                font-size: 3.5vw;
+                
+            }
+        }
+        .seccion__principal2{
+            span{
+                .imagenes__principal2{
+                    width: 29vw;
+                    margin: 30px 0px;
+                }
+            }
+        }
+    }
+    /*estilos aplicados a la seccion categorias*/
+    .main__categorias{
+        .titulo__categorias{
+            font-size: 6vw;
+        }
+        .grid__container{
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            .menu__grid1{
+                margin-bottom: 40px;
+                a{
+                    .img__categorias{
+                        width: 80vw;
+                        margin: 15px 40px;
+                    }
+                }
+                .texto__categorias{
+                    font-size: 5vw;
+                    margin-bottom: 25px;
+                }
+            }
+    }
+    }
+    /*estilos aplicados a la seccion nosotros*/
+    .main__nosotros{
+        .titulo__nosotros{
+            font-size: 5vw
+        }
+        .txt__nosotros{
+            font-size: 5vw;
+        }
+        .subtitulo__nosotros{
+            font-size: 4.5vw;
+        }
+        .seccion__redes{
+            div{
+                a{
+                    .imagen__redes{
+                        width: 16vw;
+                    }
+                }
+            }
+        }
+    }
+    /*estilos aplicados a la seccion contacto*/
+    .main__contacto{
+        margin-bottom: 75px;
+        .contacto{
+            div{
+                .titulo__contacto{
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+    /*estilos aplicados a la seccion Ubicacion*/
+    .main__ubicacion{
+        section{
+            .titulo__ubicacion{
+                font-size: 4vw;
+            }
+        }
+        .seccionn__mapa{
+            .mapa__ubicacion{
+                height: 35vh;
+            }
+        }
+    }
+    /*estilos aplicados al footer*/
+    footer{
+        div{
+            section{
+                .footer__txt{
+                    font-size: 2vw;
+                }
+            }
+            section{
+                .img__footer{
+                    width: 5vw;
+                    margin: 5px 35px;
+                }
+            }
+        }
+    }
+}

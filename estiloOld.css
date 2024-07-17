@@ -109,52 +109,13 @@
 }
 
 .imagen__redes{
-    width: 10vw;
+    width: 12vw;
     border-radius: 65px;
     transition: transform 0.3s ease;
 }
 
 .imagen__redes:hover{
     transform: scale(1.2)
-}
-
-.contenedor__formulario{
-    justify-content: center;
-    margin-left:28vw;
-}
-
-.titulo__contacto{
-    text-align: center;
-    margin: 60px;
-    font-size: 2.5vw;
-}
-
-.formulario__contacto{
-    width: 40vw;
-    text-align: center;
-    color: white;
-    margin-bottom: 60px;
-}
-
-.seccionn__mapa{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-}
-
-.mapa__ubicacion{
-    width: 60vw;
-    height: 55vh;
-    margin-bottom: 80px;
-}
-
-.seccion__carousel{
-    width: 60vw;
-}
-
-.img__carousel{
-    width: 80vw;
-    margin-bottom: 80px;
 }
 
 /*Estilos aplicados directamente a las etiquetas*/
