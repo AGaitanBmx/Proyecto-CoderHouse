@@ -21,7 +21,8 @@ header {
   width: 100%;
 }
 header nav {
-  background-color: #191919;
+  /*agregue un fondo con gradiente lineal*/
+  background-image: linear-gradient(to bottom, rgb(82, 82, 82), #191919);
 }
 header nav div .logo__img {
   width: 7vw;
@@ -35,6 +36,7 @@ header nav div div ul li .a__nav {
   transition: transform 0.3s ease;
   margin-left: 15px;
   font-family: "Oswald", sans-serif;
+  /*animacion para que se agranden las letras*/
 }
 header nav div div ul li .a__nav:hover {
   transform: scale(1.2);
@@ -62,9 +64,14 @@ main .seccion__principal2 span {
   /*aplique un mixin a las imagenes*/
 }
 main .seccion__principal2 span .imagenes__principal2 {
-  width: 30vw;
+  width: 26vw;
   margin-top: 30px;
   margin-bottom: 45px;
+  transition: transform 1s ease-in-out;
+  /*animacion de giro en 360 de las imagenes*/
+}
+main .seccion__principal2 span .imagenes__principal2:hover {
+  transform: rotate(360deg);
 }
 
 /*Estilos del main de la seccion "Categorias"*/
@@ -185,7 +192,7 @@ footer {
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #191919;
+  background-image: linear-gradient(to bottom, rgb(82, 82, 82), #191919);
   text-align: center;
 }
 footer div section .footer__txt {

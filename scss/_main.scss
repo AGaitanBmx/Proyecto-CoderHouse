@@ -21,7 +21,11 @@ main{
         span{
             /*aplique un mixin a las imagenes*/
             .imagenes__principal2{
-            @include imgprincipal2(30vw, 30px, 45px);
+            @include imgprincipal2(26vw, 30px, 45px);
+            /*animacion de giro en 360 de las imagenes*/
+            &:hover{
+                transform: rotate(360deg);
+            }
             }
         }
     }

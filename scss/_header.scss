@@ -1,7 +1,8 @@
 header{
     width: 100%;
     nav{
-        background-color: $background_footer_herder;
+        /*agregue un fondo con gradiente lineal*/
+        background-image: linear-gradient(to bottom, $colorfondo2, $colorfondo1);
         div{
             .logo__img{
                 width: 7vw;
@@ -18,6 +19,7 @@ header{
                             transition: transform 0.3s ease;
                             margin-left: 15px;
                             font-family: "Oswald", sans-serif;
+                            /*animacion para que se agranden las letras*/
                             &:hover{
                                 transform: scale(1.2)
                             }

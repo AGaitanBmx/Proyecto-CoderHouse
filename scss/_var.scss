@@ -1,12 +1,13 @@
-$background_footer_herder:#191919;
 $titulosize: 2.5vw;
 $anchoubicacion: 60vw;
-
+$colorfondo1: #191919;
+$colorfondo2: rgb(82, 82, 82); 
 /*mixins*/
 @mixin imgprincipal2 ($ancho, $mtop, $mbottom){
     width: $ancho;
     margin-top: $mtop;
     margin-bottom: $mbottom;
+    transition: transform 1s ease-in-out;
 }
 
 @mixin imgredes ($ancho, $bradius){
@@ -20,4 +21,3 @@ $anchoubicacion: 60vw;
     border-radius: $bradius;
     transition: filter 0.3s ease;
 }
-
