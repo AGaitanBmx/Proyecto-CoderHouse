@@ -1,0 +1,23 @@
+$background_footer_herder:#191919;
+$titulosize: 2.5vw;
+$anchoubicacion: 60vw;
+
+/*mixins*/
+@mixin imgprincipal2 ($ancho, $mtop, $mbottom){
+    width: $ancho;
+    margin-top: $mtop;
+    margin-bottom: $mbottom;
+}
+
+@mixin imgredes ($ancho, $bradius){
+    width: $ancho;
+    border-radius: $bradius;
+    transition: transform 0.3s ease;
+}
+
+@mixin imgcategorias($ancho, $bradius){
+    width: $ancho;
+    border-radius: $bradius;
+    transition: filter 0.3s ease;
+}
+

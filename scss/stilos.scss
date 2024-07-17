@@ -1,9 +1,11 @@
+@import "var";
 @import "body";
 @import "header";
 @import "main";
 @import "footer";
 
 /*media query utilizda para hacer cambios cuando la pantalla se achique*/
+
 @media only screen and (max-width: 600px){
     /*estilos aplicados a la seccion principal*/
     main{

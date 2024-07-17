@@ -1,8 +1,9 @@
 /*Estilos del main de la seccion "Inicio"*/
-
 main{
     background-color: black;
     .titulo{
+        /*tamaño de fuente aplicado con variable*/
+        font-size: $titulosize;
         text-align: center;
         margin: 25px 10px;
     }
@@ -18,21 +19,20 @@ main{
     }
     .seccion__principal2{
         span{
+            /*aplique un mixin a las imagenes*/
             .imagenes__principal2{
-                width: 30vw;
-                margin-top: 30px;
-                margin-bottom: 45px;
+            @include imgprincipal2(30vw, 30px, 45px);
             }
         }
     }
 }
 
 /*Estilos del main de la seccion "Categorias"*/
-
 .main__categorias{
     .titulo__categorias{
         text-align: center;
-        font-size: 3vw;
+        /*tamaño de fuente aplicado con variable*/
+        font-size: $titulosize;
         margin: 25px;
         margin: 30px;
     }
@@ -41,12 +41,11 @@ main{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         .menu__grid1{
-            padding-bottom: 40px;
+            margin-bottom: 120px;
             a{
+                /*aplique un mixin a las imagenes*/
                 .img__categorias{
-                    width: 30vw;
-                    border-radius: 25px;
-                    transition: filter 0.3s ease;
+                    @include imgcategorias(30vw, 25px);
                     &:hover{
                         filter: brightness(50%);
                     }
@@ -62,11 +61,11 @@ main{
 }
 
 /*Estilos del main de la seccion "Nosotros"*/
-
 .main__nosotros{
     .titulo__nosotros{
         text-align: center;
-        font-size: 3vw;
+        /*tamaño de fuente aplicado con variable*/
+        font-size: $titulosize;
         margin: 25px;
         margin: 30px;
     }
@@ -75,10 +74,9 @@ main{
         font-size: 2.8vw;
         margin: 60px 40px;
     }
+    /*utilice "extend" para tarer las propiedades de la clase anterior*/
     .subtitulo__nosotros{
-        text-align: center;
-        font-size: 3vw;
-        margin: 40px;
+        @extend .txt__nosotros;
     }
     .seccion__redes{
         display: flex;
@@ -87,10 +85,9 @@ main{
         margin-bottom: 80px;
         div{
             a{
+                /*aplique mixin en las imagenes*/
                 .imagen__redes{
-                    width: 12vw;
-                    border-radius: 65px;
-                    transition: transform 0.3s ease;
+                    @include imgredes (12vw, 65px);
                     &:hover{
                         transform: scale(1.2);
                     }
@@ -102,14 +99,14 @@ main{
 }
 
 /*Estilos del main de la seccion "Contacto"*/
-
 .main__contacto{
     .contacto{
     div{
         .titulo__contacto{
             text-align: center;
             margin: 60px;
-            font-size: 2.5vw;
+        /*tamaño de fuente aplicado con variable*/
+            font-size: $titulosize;
         }        
     }
     .contenedor__formulario{
@@ -126,12 +123,12 @@ main{
 }
 
 /*Estilos del main de la seccion "Ubicacion"*/
-
 .main__ubicacion{
     section{
         .titulo__ubicacion{
             text-align: center;
-            font-size: 3vw;
+            /*tamaño de fuente aplicado con variable*/
+            font-size: $titulosize;
             padding-top: 50px;
         }
     }
@@ -140,13 +137,15 @@ main{
         justify-content: center;
         margin: 40px;
         .mapa__ubicacion{
-            width: 60vw;
+            /*ancho aplicado con variable*/
+            width: $anchoubicacion;
             height: 55vh;
             margin-bottom: 80px;
         }
     }
     .seccion__carousel{
-        width: 60vw;
+        /*ancho aplicado con variable*/
+        width: $anchoubicacion;
         div{
             .img__carousel{
                 width: 80vw;
