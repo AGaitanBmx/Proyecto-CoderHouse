@@ -13,13 +13,10 @@ footer{
             }
         }
         section{
-            a{
-                text-decoration: none;
-                .img__footer{
-                    width: 2.5vw;
-                    margin: 10px 50px; 
-                    border-radius: 18px;
-                }
+            .img__footer{
+                width: 2.5vw;
+                margin: 10px 50px; 
+                border-radius: 18px;
             }
         }
     }
