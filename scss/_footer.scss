@@ -13,10 +13,17 @@ footer{
             }
         }
         section{
+            a{
+            text-decoration: none;
             .img__footer{
                 width: 2.5vw;
                 margin: 10px 50px; 
                 border-radius: 18px;
+                transition: transform 1s ease-in-out;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
             }
         }
     }

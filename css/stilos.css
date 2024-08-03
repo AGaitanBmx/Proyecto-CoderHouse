@@ -198,10 +198,17 @@ footer {
 footer div section .footer__txt {
   font-size: 1.3vw;
 }
-footer div section .img__footer {
+footer div section a {
+  text-decoration: none;
+}
+footer div section a .img__footer {
   width: 2.5vw;
   margin: 10px 50px;
   border-radius: 18px;
+  transition: transform 1s ease-in-out;
+}
+footer div section a .img__footer:hover {
+  transform: rotate(360deg);
 }
 
 /*media query utilizda para hacer cambios cuando la pantalla se achique*/
